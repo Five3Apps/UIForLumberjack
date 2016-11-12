@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CA91DEA853F83A9B5965519 /* libPods-UIForLumberjackExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689A30D6C9B769D6AA1D012 /* libPods-UIForLumberjackExample.a */; };
 		8E809F291887404600884B89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E809F281887404600884B89 /* Foundation.framework */; };
 		8E809F2B1887404600884B89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E809F2A1887404600884B89 /* CoreGraphics.framework */; };
 		8E809F2D1887404600884B89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E809F2C1887404600884B89 /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		8E809F501887404600884B89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E809F2C1887404600884B89 /* UIKit.framework */; };
 		8E809F581887404700884B89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E809F561887404700884B89 /* InfoPlist.strings */; };
 		8E809F5A1887404700884B89 /* UIForLumberjackExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E809F591887404700884B89 /* UIForLumberjackExampleTests.m */; };
-		98CCACCD41CB47209E2A046A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4FFBA3A0594136AC20468A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4E4FFBA3A0594136AC20468A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E809F251887404600884B89 /* UIForLumberjackExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIForLumberjackExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E809F281887404600884B89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E809F2A1887404600884B89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,7 +57,9 @@
 		8E809F551887404700884B89 /* UIForLumberjackExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIForLumberjackExampleTests-Info.plist"; sourceTree = "<group>"; };
 		8E809F571887404700884B89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E809F591887404700884B89 /* UIForLumberjackExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIForLumberjackExampleTests.m; sourceTree = "<group>"; };
-		CA5777A29AE34417915CC317 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		9689A30D6C9B769D6AA1D012 /* libPods-UIForLumberjackExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIForLumberjackExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9949D8DA38CAEE0AC5BC018F /* Pods-UIForLumberjackExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIForLumberjackExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIForLumberjackExample/Pods-UIForLumberjackExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A3263FBFE78EC01E262F08AF /* Pods-UIForLumberjackExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIForLumberjackExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIForLumberjackExample/Pods-UIForLumberjackExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +70,7 @@
 				8E809F2B1887404600884B89 /* CoreGraphics.framework in Frameworks */,
 				8E809F2D1887404600884B89 /* UIKit.framework in Frameworks */,
 				8E809F291887404600884B89 /* Foundation.framework in Frameworks */,
-				98CCACCD41CB47209E2A046A /* libPods.a in Frameworks */,
+				5CA91DEA853F83A9B5965519 /* libPods-UIForLumberjackExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		397D96EAA1603AAC7C60DC9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9949D8DA38CAEE0AC5BC018F /* Pods-UIForLumberjackExample.debug.xcconfig */,
+				A3263FBFE78EC01E262F08AF /* Pods-UIForLumberjackExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8E809F1C1887404600884B89 = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +103,7 @@
 				8E809F531887404600884B89 /* UIForLumberjackExampleTests */,
 				8E809F271887404600884B89 /* Frameworks */,
 				8E809F261887404600884B89 /* Products */,
-				CA5777A29AE34417915CC317 /* Pods.xcconfig */,
+				397D96EAA1603AAC7C60DC9C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +123,7 @@
 				8E809F2A1887404600884B89 /* CoreGraphics.framework */,
 				8E809F2C1887404600884B89 /* UIKit.framework */,
 				8E809F4D1887404600884B89 /* XCTest.framework */,
-				4E4FFBA3A0594136AC20468A /* libPods.a */,
+				9689A30D6C9B769D6AA1D012 /* libPods-UIForLumberjackExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,11 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E809F5D1887404700884B89 /* Build configuration list for PBXNativeTarget "UIForLumberjackExample" */;
 			buildPhases = (
-				96CA9E8F40364CC580FCD0B5 /* Check Pods Manifest.lock */,
+				B3B1E40EEC206253CBFB4C00 /* [CP] Check Pods Manifest.lock */,
 				8E809F211887404600884B89 /* Sources */,
 				8E809F221887404600884B89 /* Frameworks */,
 				8E809F231887404600884B89 /* Resources */,
-				E407FADDC71246FCBA15ACD9 /* Copy Pods Resources */,
+				295A235EBFDE8F313C42E321 /* [CP] Embed Pods Frameworks */,
+				E1A8223C631FA6159E7FCC2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +223,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Sigmapoint;
 				TargetAttributes = {
+					8E809F241887404600884B89 = {
+						DevelopmentTeam = A3SAK2WNZ9;
+					};
 					8E809F4B1887404600884B89 = {
 						TestTargetID = 8E809F241887404600884B89;
 					};
@@ -258,14 +272,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		96CA9E8F40364CC580FCD0B5 /* Check Pods Manifest.lock */ = {
+		295A235EBFDE8F313C42E321 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIForLumberjackExample/Pods-UIForLumberjackExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3B1E40EEC206253CBFB4C00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,19 +302,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E407FADDC71246FCBA15ACD9 /* Copy Pods Resources */ = {
+		E1A8223C631FA6159E7FCC2E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIForLumberjackExample/Pods-UIForLumberjackExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -422,10 +451,11 @@
 		};
 		8E809F5E1887404700884B89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA5777A29AE34417915CC317 /* Pods.xcconfig */;
+			baseConfigurationReference = 9949D8DA38CAEE0AC5BC018F /* Pods-UIForLumberjackExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = A3SAK2WNZ9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIForLumberjackExample/UIForLumberjackExample-Prefix.pch";
 				INFOPLIST_FILE = "UIForLumberjackExample/UIForLumberjackExample-Info.plist";
@@ -436,10 +466,11 @@
 		};
 		8E809F5F1887404700884B89 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA5777A29AE34417915CC317 /* Pods.xcconfig */;
+			baseConfigurationReference = A3263FBFE78EC01E262F08AF /* Pods-UIForLumberjackExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = A3SAK2WNZ9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIForLumberjackExample/UIForLumberjackExample-Prefix.pch";
 				INFOPLIST_FILE = "UIForLumberjackExample/UIForLumberjackExample-Info.plist";

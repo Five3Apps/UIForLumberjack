@@ -13,6 +13,9 @@
 
 + (instancetype)sharedInstance;
 
+// If > 0, then log messages will be limited to the most recent maxLines messages.
+@property (nonatomic) NSUInteger maxLines;
+
 @property (nonatomic, readonly) UITableView *tableView;
 
 - (void)showLogInView:(UIView *)view;

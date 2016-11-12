@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-#import "UIForLumberjack.h"
+#import <UIForLumberjack/UIForLumberjack.h>
 
 @interface FirstViewController ()
 

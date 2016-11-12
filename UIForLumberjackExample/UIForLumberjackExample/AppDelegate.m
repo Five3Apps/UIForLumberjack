@@ -32,6 +32,7 @@ int ddLogLevel = LOG_LEVEL_VERBOSE;
     [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blueColor] backgroundColor:nil forFlag:LOG_FLAG_VERBOSE];
     
     [DDLog addLogger:[UIForLumberjack sharedInstance]];
+    [UIForLumberjack sharedInstance].maxLines = 4;
     
     DDLogInfo(@"All loggers added successfully");
 }

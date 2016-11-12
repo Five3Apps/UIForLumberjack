@@ -30,6 +30,7 @@ NSString *const LogCellReuseIdentifier = @"LogCell";
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[UIForLumberjack alloc] init];
+        sharedInstance.maxLines = 0;
     });
     return sharedInstance;
 }
@@ -67,6 +68,19 @@ NSString *const LogCellReuseIdentifier = @"LogCell";
 - (void)logMessage:(DDLogMessage *)logMessage
 {
     dispatch_async(dispatch_get_main_queue(), ^{
+        NSIndexPath *removeIndexPath = nil;
+        if (self.maxLines > 0 && _messages.count >= self.maxLines) {
+            
+            removeIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+            
+            if ([_messagesExpanded containsObject:@(0)]) {
+                [_messagesExpanded removeObject:@(0)];
+            }
+            
+            [_messages removeObjectAtIndex:0];
+            [_tableView deleteRowsAtIndexPaths:@[removeIndexPath] withRowAnimation:UITableViewRowAnimationTop];
+        }
+        
         [_messages addObject:logMessage];
         
         BOOL scroll = NO;
@@ -76,6 +90,10 @@ NSString *const LogCellReuseIdentifier = @"LogCell";
         
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_messages.count-1 inSection:0];
         [_tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
+        
+        if (removeIndexPath != nil) {
+            [_tableView reloadRowsAtIndexPaths:@[removeIndexPath] withRowAnimation:UITableViewRowAnimationTop];
+        }
         
         if(scroll) {
             [_tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
